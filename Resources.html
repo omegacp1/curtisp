@@ -1,0 +1,105 @@
+<!-- Resources -->
+<!-- Navbar (Sits on top) -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Christian Church">
+  <meta name="keywords" content="HTML, CSS, JavaSCript">
+  <meta name="author" content="Curtis Paul">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bible Way Temple Int'l</title>
+  <link rel="stylesheet"
+href="https://w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family:"Times New Roman", serif}
+h1,h2,h3,h4,h5,h6 {font-family:serif; letter-spacing:5px}
+</style>
+<body>
+<img src="BWLogoban.jpg" alt="Bible Way Logo" style="width:100%">
+</div>
+
+<div class="w3-container">
+
+<div class="w3-bar w3-border w3-light-grey">
+  <a href="BW site.html" class="w3-bar-item w3-button">Home</a>
+  <a href="BW_about.html" class="w3-bar-item w3-button w3-hover-green">About</a>
+  <a href="BW_Ministries.html" class="w3-bar-item w3-button w3-hover-blue">Ministries</a>
+  <a href="Affiliates Directory.html" class="w3-bar-item w3-button w3-hover-teal">Affiliate Directory</a>
+  <a href="Current news and Events.html" class="w3-bar-item w3-button w3-hover-green">Current News and Events</a>
+  <a href="Resources.html" class="w3-bar-item w3-button w3-hover-teal">Resources</a>
+  <a href="Donate.html" class="w3-bar-item w3-button w3-hover-blue">Donate</a>
+  <a href="Contact Us.html" class="w3-bar-item w3-button w3-hover-green">Contact Us</a>
+</div>
+</div>
+<h2 style="text-align: center;">Welcome to our Resources Page<h2>
+  <h2 style="text-align: center;">Devotionals for your Spiritual Development<h2>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="Eph 5 25 Love and Marriage.png" style="width:100%" onclick="onClick(this)" alt="Love and Marriage">
+      <img src="1 Pet 2 22 Jesus Sacrifice.png" style="width:100%" onclick="onClick(this)" alt="The Smitten Rock, The Sacrifice of Jesus">
+      <img src="Psalm 23 My Shepherd.png" style="width:100%" onclick="onClick(this)" alt="Jesus the Shepherd in Adversity">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="Rom 12 2 Thoughts.png" style="width:100%" onclick="onClick(this)" alt="The Mind Thinking is Powerful">
+      <img src="Rom 12 15 Joy.png" style="width:100%" onclick="onClick(this)" alt="What is Joy?">
+      <img src="2 Cor 12 9 Strength in Weakness.png" style="width:100%" onclick="onClick(this)" alt="Strength in Weakness">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="Eph 6 1 Children for Jesus.png" style="width:100%" onclick="onClick(this)" alt="Children for Jesus">
+      <img src="Col 4 2 Heb 5 7 Prayer and Fasting.png" style="width:100%" onclick="onClick(this)" alt="Fervency in Prayer and Fasting">
+      <img src="Ps 27 Neglect.png" style="width:100%" onclick="onClick(this)" alt="Neglect of our Children">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="Neh 8 10 Unhappiness.png" style="width:100%" onclick="onClick(this)" alt="Unhappiness is not an Option">
+      <img src="Matt 7 1 Jn 8 3 Judge Not.png" style="width:100%" onclick="onClick(this)" alt="Do Not Judge">
+      <img src="Matt 4 4 Faith.png" style="width:100%" onclick="onClick(this)" alt="What is Faith?">
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <script>
+
+    // Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+
+</body>
+</html>
